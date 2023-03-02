@@ -6,14 +6,15 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("com.rain")
+@ComponentScan("com.rain.controller")
 public class MarketConfig {
-
     @Bean
     public SpotClientImpl spotClient(){
-        SpotClientImpl client = new SpotClientImpl(PrivateConfig.API_KEY, PrivateConfig.SECRET_KEY);
-        return client;
+        SpotClientImpl spotClient = new SpotClientImpl(PrivateConfig.API_KEY, PrivateConfig.SECRET_KEY);
+        return spotClient;
     }
 
 
+
 }
+

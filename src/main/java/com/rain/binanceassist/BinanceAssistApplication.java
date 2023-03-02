@@ -1,15 +1,16 @@
-package com.rain.binanceassistant2;
+package com.rain.binanceassist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan(basePackages = {"com.rain.controller"})
+@ComponentScan(basePackages = {"com.rain.controller","com.rain.config"})
 @SpringBootApplication
-public class BinanceAssistant2Application {
+public class BinanceAssistApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BinanceAssistant2Application.class, args);
+        SpringApplication.run(BinanceAssistApplication.class, args);
+        System.out.println("server start");
     }
 
 }
