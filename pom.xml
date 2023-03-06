@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.Rain</groupId>
-    <artifactId>BinanceAssistant2</artifactId>
+    <artifactId>BinanceAssist</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>BinanceAssistant2</name>
     <description>BinanceAssistant2</description>
