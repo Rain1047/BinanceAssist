@@ -14,7 +14,8 @@ public class FormController {
     public ResponseEntity<String> submitForm(@RequestParam("name") String name, @RequestParam("email") String email) {
         // 处理表单数据
         // ...
-        System.out.println("get the data from form");
+        System.out.println("name: " + name);
+        System.out.println("email: " + email);
         return ResponseEntity.ok("Success");
     }
 
