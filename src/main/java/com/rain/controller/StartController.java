@@ -12,7 +12,7 @@ public class StartController {
 
     @RequestMapping("/")
     public String Test() {
-        return "hello";
+        return "hello, welcome to binance assist";
     }
 
     // 不带参数，一般获取参数所有数据
