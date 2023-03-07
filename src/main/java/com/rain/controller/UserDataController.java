@@ -24,9 +24,15 @@ public class UserDataController {
     private UserDataService userDataService;
 
     @PostMapping("/json")
+//    public ResponseEntity<String> submitForm(@RequestParam("name") String name, @RequestParam("email") String email) {
     public ResponseEntity<String> saveJsonData(@RequestBody String jsonDataStr) {
         System.out.println(jsonDataStr);
-        userDataService.saveJsonData(jsonDataStr);
+        try{
+            userDataService.saveJsonData(jsonDataStr);
+        }
+        catch (Exception E){
+            System.out.println("error while using service");
+        };
         return ResponseEntity.ok("Save");
     }
 }
