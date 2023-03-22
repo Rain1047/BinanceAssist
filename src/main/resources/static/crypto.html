@@ -24,6 +24,9 @@
 </form>
 
 
+<!-- 在页面中显示返回数据的元素 -->
+<div id="result"></div>
+
 <script>
   // 获取表单元素和按钮
   const myForm = document.getElementById('myForm');
@@ -43,6 +46,7 @@
     axios.post('/market/{crypto}', formData)
             .then((response) => {
               console.log(response.data); // 处理成功响应
+              document.getElementById('result').innerHTML = response.data; // 接受返回的数据
             })
             .catch((error) => {
               console.error(error); // 处理错误响应

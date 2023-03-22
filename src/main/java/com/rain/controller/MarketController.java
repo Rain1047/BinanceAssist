@@ -42,6 +42,7 @@ public class MarketController {
         System.out.println(parameters);
         String result = spotClient.createMarket().klines(parameters);
         logger.info(result);
-        return "get crypto: " + crypto;
+//        return "get crypto: " + crypto;
+        return result;
     }
 }
